@@ -26,7 +26,12 @@
                 <td width="22%"><img src="/Assets/Image/ImageProduct/@item.sImageSP" width="60%" /></td>
                 @using (Html.BeginForm("CapNhatGioHang", "Cart", new { @MaSP = item.sIdSP }))
                 {
-                    <td width="12%"><input type="number" min="1" class="form-control" name="txtSoLuong" value="@item.iSoLuong" size="2" /></td>
+                    <td width="12%"><input type="number" min="1" class="form-control" name="txtSoLuong" value="@item.iSoLuong" size="2" />
+                @if (Session["tbTxtSoLuong"] != null) { 
+                    <span class="text-danger" style="font-size:small">@Session["tbTxtSoLuong"]</span>
+                }
+                    
+                    </td>
                     <td width="12%">@String.Format("{0:0,0}", item.dDetailPrice)<sup>đ</sup></td>
                     <td width="16%">@String.Format("{0:0,0}", item.dThanhTien)<sup>đ</sup></td>
                     @*<td><a href="@Url.Action("XemChiTiet", "SanPham", new { @ms=item.sIdSP})">Details</a></td>*@
@@ -168,3 +173,4 @@
         </ul>
     </div>
 </div>
+

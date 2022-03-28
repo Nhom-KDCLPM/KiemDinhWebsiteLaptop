@@ -237,9 +237,23 @@ namespace DoAnAdmin.Controllers
             ///kiem tra sach can cap nhat co trong gio hang hay khong
             Cart sp = lstGioHang.Single(s => s.sIdSP == MaSP);
             //Neu co tien hanh cap nhat
+            
             if (sp != null)
             {
-                sp.iSoLuong = int.Parse(f["txtSoLuong"].ToString());
+                try
+                {
+                    sp.iSoLuong = int.Parse(f["txtSoLuong"].ToString());
+                    if (Session["tbTxtSoLuong"] != null)
+                    {
+                        Session["tbTxtSoLuong"] = null;
+                    }
+                }
+                catch (Exception)
+                {
+                    Session["tbTxtSoLuong"] = "Vui lòng nhập số";
+                    return RedirectToAction("Cart", "Cart");
+                }
+               
             }
             return RedirectToAction("Cart", "Cart");
         }
