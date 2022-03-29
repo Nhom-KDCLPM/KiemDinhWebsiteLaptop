@@ -101,6 +101,5 @@ E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\bin\System.Web.Razor
 E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\bin\System.Web.WebPages.xml
 E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\bin\System.Web.WebPages.Deployment.xml
 E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\bin\System.Web.WebPages.Razor.xml
-E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\obj\Debug\DoAn_WebBanLaptop.csprojResolveAssemblyReference.cache
 E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\obj\Debug\DoAnAdmin.dll
 E:\KDCLPM\DoAnMon\KiemDinhWebsiteLaptop\DoAnAdmin\DoAnAdmin\obj\Debug\DoAnAdmin.pdb
